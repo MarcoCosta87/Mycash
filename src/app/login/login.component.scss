@@ -1,6 +1,8 @@
 :host {
     display: flex;
     justify-content: center;
+    background: -webkit-gradient(to right, #020024, #27bc0b, #41be2b);
+    background: linear-gradient(to right, #020024, #27bc0b, #41be2b);
 }
 
 .exemple-card {
@@ -22,8 +24,15 @@
     width: 100%;
 }
 
-
+.logo-span {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    img {
+        width: 200px;
+    }
 }
+
 .container-button-enter {
     display: flex;
     justify-content: center;
@@ -31,7 +40,16 @@
         background-color: #4caf50 !important;
     }
 }
+
 .container-button {
     display: flex;
     justify-content: space-between;
+}
+
+.section-container {
+    WIDTH: 100VW;
+    HEIGHT: 100VH;
+    DISPLAY: FLEX;
+    JUSTIFY-CONTENT: CENTER;
+    ALIGN-ITEMS: CENTER;
 }
