@@ -12,12 +12,16 @@ import { DespesaComponent } from './despesa/despesa.component';
 import { LoginComponent } from './login/login.component';
 import { RecuperarSenhaComponent } from './formulario/recuperar-senha/recuperar-senha.component';
 import { CadastrarUsuarioComponent } from './formulario/cadastrar-usuario/cadastrar-usuario.component';
+import { NotFoundComponent } from './sharedComponents/not-found/not-found.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // material design modules
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 @NgModule({
@@ -30,7 +34,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DespesaComponent,
     LoginComponent,
     RecuperarSenhaComponent,
-    CadastrarUsuarioComponent
+    CadastrarUsuarioComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +45,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     MatCardModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule,
 
 
   ],

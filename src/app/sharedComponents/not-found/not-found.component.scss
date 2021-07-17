@@ -1,0 +1,55 @@
+:host {
+    display: flex;
+    justify-content: center;
+    background: -webkit-gradient(to right, #020024, #27bc0b, #41be2b);
+    background: linear-gradient(to right, #020024, #27bc0b, #41be2b);
+}
+
+.exemple-card {
+    max-width: 400px;
+}
+
+.exemple-header-image {
+    background-image: url('https://materil.anguar.io/assets/img/exemples/shibal.jpg');
+    background-size: cover;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+.logo-span {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    img {
+        width: 400px;
+    }
+}
+
+.container-button-enter {
+    display: flex;
+    justify-content: center;
+    button {
+        background-color: #4caf50 !important;
+    }
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-container {
+    WIDTH: 100VW;
+    HEIGHT: 100VH;
+    DISPLAY: FLEX;
+    JUSTIFY-CONTENT: CENTER;
+    ALIGN-ITEMS: CENTER;
+}
