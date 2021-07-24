@@ -1,0 +1,14 @@
+.container-buttons {
+    float: right;
+    padding: 10px;
+    button {
+        margin: 10px;
+        color: #fff;
+    }
+    .button-receita {
+        background-color: #007bff;
+    }
+    .button-despesa {
+        background-color: #c82333;
+    }
+}
