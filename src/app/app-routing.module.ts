@@ -8,9 +8,9 @@ import { componentFactoryName } from '@angular/compiler';
 import { RelatorioReceitaComponent } from './receita/relatorio-receita/relatorio-receita.component';
 import { CadastrarUsuarioComponent } from './formulario/cadastrar-usuario/cadastrar-usuario.component';
 import { RecuperarSenhaComponent } from './formulario/recuperar-senha/recuperar-senha.component';
-import { CadastrosComponent } from './formulario/cadastros/cadastros.component';
 import { AuthGuard } from './service/auth.guard';
 import { NotFoundComponent } from './sharedComponents/not-found/not-found.component';
+import { ReceitaComponent } from './formulario/receita/receita.component';
 
 
 const routes: Routes = [
@@ -21,7 +21,8 @@ const routes: Routes = [
 {path:'relatorio-receita',component: RelatorioReceitaComponent,canActivate:[AuthGuard]},
 {path:'cadastrar-usuario',component: CadastrarUsuarioComponent},
 {path:'recuperar-senha',component: RecuperarSenhaComponent},
-{path:'cadastro',component: CadastrosComponent,canActivate:[AuthGuard]},
+{path:'receitas-form',component: ReceitaComponent,canActivate:[AuthGuard]},
+{path:'despesas-form',component: DespesaComponent,canActivate:[AuthGuard]},
 {path: '**', component: NotFoundComponent}
 ];
 

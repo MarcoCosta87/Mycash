@@ -6,9 +6,89 @@
         color: #fff;
     }
     .button-receita {
-        background-color: #007bff;
+        background-color: #519beb;
     }
     .button-despesa {
-        background-color: #c82333;
+        background-color: rgb(241, 93, 111);
     }
+}
+
+.container_despesas {
+    height: 50vh;
+    width: 100%;
+    background: rgb(211, 237, 248);
+    overflow-y: scroll;
+    table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+    }
+    table tr {
+        background-color: #fbfbfb;
+        border: 1px solid #ddd
+    }
+    table th,
+    table td {
+        padding: .625em;
+        text-align: center;
+    }
+    table th {
+        font-size: .85em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+    table td {
+        text-transform: uppercase;
+    }
+    thead tr {
+        background: #519beb;
+    }
+}
+
+.container_receitas {
+    height: 50vh;
+    width: 100%;
+    background: #eee1e2;
+    overflow-y: scroll;
+    table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+    }
+    table tr {
+        background-color: #fbfbfb;
+        border: 1px solid #ddd
+    }
+    table th,
+    table td {
+        padding: .625em;
+        text-align: center;
+    }
+    table th {
+        font-size: .85em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+    table td {
+        text-transform: uppercase;
+    }
+    thead tr {
+        background: rgb(241, 93, 111);
+    }
+}
+
+.container_title {
+    display: flex;
+    justify-content: center;
+}
+
+.container_actions {
+    display: flex;
+    justify-content: space-evenly;
 }

@@ -1,12 +1,79 @@
 <app-navbar></app-navbar>
 <section>
     <span class="container-buttons">
-        <button mat-flat-buton class="button-receita">Inserir Receita</button>
-        <button mat-flat-buton class="button-despesa">Inserir despesa</button>
+        <button mat-flat-buton class="button-receita" routerLink ="/receitas-form">Inserir Receita</button>
+        <button mat-flat-buton class="button-despesa" routerLink = "/despesas-form">Inserir Despesa</button>
     </span>
-    <section>
+</section>
+<!-- section table ultimas despesas-->
+<section>
+    <div class="container_despesas">
+        <div class="container_title">
+            <h1>Ultimas Despesas</h1>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>DATA</th>
+                    <th>VALOR</th>
+                    <th>TIPO</th>
+                    <th>S/N FIXO</th>
+                    <th>DESCRIAÇÂO</th>
+                    <th>MENU</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <tr *ngFor="let despesas of listDespesas">
+                        <td>{{despesas.data}}</td>
+                        <td>{{despesas.valor}}</td>
+                        <td>{{despesas.tipo}}</td>
+                        <td>{{despesas.descricao}}</td>
+                        <td>{{despesas.fixo}}</td>
+                        <td>
+                            <div class="container_actions">
+                                <mat-icon>delete</mat-icon>
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </td>
+                    </tr>
 
+            </tbody>
+        </table>
+    </div>
+</section>
+<!-- section table ultimas receitas -->
+<section>
+    <div class="container_receitas">
+        <div class="container_title">
+            <h1>Ultimas Receitas</h1>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>DATA</th>
+                    <th>VALOR</th>
+                    <th>TIPO</th>
+                    <th>S/N FIXO</th>
+                    <th>DESCRIAÇÂO</th>
+                    <th>MENU</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let receita of listReceitas">
+                    <td>{{receita.data}}</td>
+                    <td>{{receita.valor}}</td>
+                    <td>{{receita.tipo}}</td>
+                    <td>{{receita.descricao}}</td>
+                    <td>{{receita.fixo}}</td>
+                    <div class="container_actions">
+                        <mat-icon>delete</mat-icon>
+                        <mat-icon>edit</mat-icon>
+                    </div>
+                </tr>
 
-    </section>
+            </tbody>
+        </table>
+    </div>
 
 </section>
